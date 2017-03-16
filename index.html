@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+	<div><%= htmlWebpackPlugin.options.date %></div>
+	<% for(var key in htmlWebpackPlugin) { %>
+		<div><%= key %></div>
+	<% } %>
+
+	<% for(var key in htmlWebpackPlugin.files) { %>
+		<div>Key-<%= key %></div>
+		<div><%= JSON.stringify(htmlWebpackPlugin.files[key]) %></div>
+	<% } %>
+	<% for(var key in htmlWebpackPlugin.options) { %>
+		<div>Key-<%= key %></div>
+		<div><%= JSON.stringify(htmlWebpackPlugin.options[key])  %></div>
+	<% } %>
+
+	<!-- 自由配置 -->
+	<script src="<%= htmlWebpackPlugin.files.chunks.h0.entry %>">
+	</script>
+	
+</body>
+</html>
