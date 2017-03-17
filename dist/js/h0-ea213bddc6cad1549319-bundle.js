@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>htmlWebpackPlugin</title><!-- inline js  --><script type="text/javascript">/******/ (function(modules) { // webpackBootstrap
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -63,12 +63,12 @@
 /******/ 	__webpack_require__.p = "wwww.cdn";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */
+/******/ ({
+
+/***/ 10:
 /***/ (function(module, exports) {
 
 function a(){
@@ -76,4 +76,5 @@ function a(){
 }
 
 /***/ })
-/******/ ]);</script></head><body><div>Fri Mar 17 2017 17:08:33 GMT+0800 (中国标准时间)</div><div>files</div><div>options</div><div>Key-publicPath</div><div>"wwww.cdn/"</div><div>Key-chunks</div><div>{"h1":{"size":288,"entry":"wwww.cdn//js/h1-ca26dfd551a41feb2f6a-bundle.js","hash":"ca26dfd551a41feb2f6a","css":[]},"h0":{"size":19,"entry":"wwww.cdn//js/h0-42c7ea2b6a8e2c0fc5a3-bundle.js","hash":"42c7ea2b6a8e2c0fc5a3","css":[]}}</div><div>Key-js</div><div>["wwww.cdn//js/h1-ca26dfd551a41feb2f6a-bundle.js","wwww.cdn//js/h0-42c7ea2b6a8e2c0fc5a3-bundle.js"]</div><div>Key-css</div><div>[]</div><div>Key-manifest</div><div></div><div>Key-template</div><div>"F:\\github\\my_webpack_3\\HelloGitHub\\node_modules\\html-webpack-plugin\\lib\\loader.js!F:\\github\\my_webpack_3\\HelloGitHub\\index.html"</div><div>Key-filename</div><div>"./view/h0-[-hash-].html"</div><div>Key-hash</div><div>false</div><div>Key-inject</div><div>true</div><div>Key-compile</div><div>true</div><div>Key-favicon</div><div>""</div><div>Key-minify</div><div>{"collapseWhitespace":true}</div><div>Key-cache</div><div>true</div><div>Key-showErrors</div><div>true</div><div>Key-chunks</div><div>"all"</div><div>Key-excludeChunks</div><div>[]</div><div>Key-title</div><div>"htmlWebpackPlugin"</div><div>Key-xhtml</div><div>false</div><div>Key-date</div><div>"2017-03-17T09:08:33.944Z"</div><!-- 自由配置 --><!-- 排除公关部分--><script src="wwww.cdn//js/h1-ca26dfd551a41feb2f6a-bundle.js"></script><!-- 排除公关部分--><script type="text/javascript" src="wwww.cdn//js/h1-ca26dfd551a41feb2f6a-bundle.js"></script><script type="text/javascript" src="wwww.cdn//js/h0-42c7ea2b6a8e2c0fc5a3-bundle.js"></script></body></html>
+
+/******/ });

@@ -63,17 +63,25 @@
 /******/ 	__webpack_require__.p = "wwww.cdn";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */
+/* 0 */
 /***/ (function(module, exports) {
 
+throw new Error("Module parse failed: F:\\github\\my_webpack_3\\HelloGitHub\\src\\script\\x.css Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| .csp{\r\n| \tcolor:red;\r\n| }");
+
+/***/ }),
+/* 1 */,
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(0);
 function b(){
 	
 }
+// import './../css/mad.css';
 
 /***/ })
 /******/ ]);

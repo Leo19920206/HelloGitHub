@@ -3,9 +3,92 @@
 <head>
 	<meta charset="UTF-8">
 	<title>htmlWebpackPlugin</title>
+	<!-- inline js  -->
+	<script type="text/javascript">
+		/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+/******/
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// identity function for calling harmony imports with the correct context
+/******/ 	__webpack_require__.i = function(value) { return value; };
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "wwww.cdn";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */,
+/* 1 */
+/***/ (function(module, exports) {
+
+function a(){
+	
+}
+
+/***/ })
+/******/ ]);
+	</script>
+	
 </head>
 <body>
-	<div>Thu Mar 16 2017 17:59:34 GMT+0800 (中国标准时间)</div>
+	<div>Fri Mar 17 2017 17:08:33 GMT+0800 (中国标准时间)</div>
 	
 		<div>files</div>
 	
@@ -17,10 +100,10 @@
 		<div>"wwww.cdn/"</div>
 	
 		<div>Key-chunks</div>
-		<div>{"h1":{"size":19,"entry":"wwww.cdn//js/h1-314558c8aaafb79c55f1-bundle.js","hash":"314558c8aaafb79c55f1","css":[]},"h0":{"size":19,"entry":"wwww.cdn//js/h0-13dd7a2995d92b9c4b67-bundle.js","hash":"13dd7a2995d92b9c4b67","css":[]}}</div>
+		<div>{"h1":{"size":288,"entry":"wwww.cdn//js/h1-ca26dfd551a41feb2f6a-bundle.js","hash":"ca26dfd551a41feb2f6a","css":[]},"h0":{"size":19,"entry":"wwww.cdn//js/h0-42c7ea2b6a8e2c0fc5a3-bundle.js","hash":"42c7ea2b6a8e2c0fc5a3","css":[]}}</div>
 	
 		<div>Key-js</div>
-		<div>["wwww.cdn//js/h1-314558c8aaafb79c55f1-bundle.js","wwww.cdn//js/h0-13dd7a2995d92b9c4b67-bundle.js"]</div>
+		<div>["wwww.cdn//js/h1-ca26dfd551a41feb2f6a-bundle.js","wwww.cdn//js/h0-42c7ea2b6a8e2c0fc5a3-bundle.js"]</div>
 	
 		<div>Key-css</div>
 		<div>[]</div>
@@ -30,10 +113,10 @@
 	
 	
 		<div>Key-template</div>
-		<div>"F:\\github\\my_webpack_2\\node_modules\\html-webpack-plugin\\lib\\loader.js!F:\\github\\my_webpack_2\\index.html"</div>
+		<div>"F:\\github\\my_webpack_3\\HelloGitHub\\node_modules\\html-webpack-plugin\\lib\\loader.js!F:\\github\\my_webpack_3\\HelloGitHub\\index.html"</div>
 	
 		<div>Key-filename</div>
-		<div>"/view/h1-[-hash-].html"</div>
+		<div>"./view/h1-[-hash-].html"</div>
 	
 		<div>Key-hash</div>
 		<div>false</div>
@@ -69,12 +152,21 @@
 		<div>false</div>
 	
 		<div>Key-date</div>
-		<div>"2017-03-16T09:59:34.037Z"</div>
+		<div>"2017-03-17T09:08:33.945Z"</div>
 	
 
 	<!-- 自由配置 -->
-	<script src="wwww.cdn//js/h0-13dd7a2995d92b9c4b67-bundle.js">
-	</script>
 	
-<script type="text/javascript" src="wwww.cdn//js/h1-314558c8aaafb79c55f1-bundle.js"></script><script type="text/javascript" src="wwww.cdn//js/h0-13dd7a2995d92b9c4b67-bundle.js"></script></body>
+		<!-- 排除公关部分-->
+		
+			<script src="wwww.cdn//js/h1-ca26dfd551a41feb2f6a-bundle.js">
+			</script>
+		
+	
+		<!-- 排除公关部分-->
+		
+	
+	
+	
+<script type="text/javascript" src="wwww.cdn//js/h1-ca26dfd551a41feb2f6a-bundle.js"></script><script type="text/javascript" src="wwww.cdn//js/h0-42c7ea2b6a8e2c0fc5a3-bundle.js"></script></body>
 </html>

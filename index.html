@@ -3,6 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title><%= htmlWebpackPlugin.options.title %></title>
+	<!-- inline js  -->
+	<script type="text/javascript">
+		<%= compilation.assets[htmlWebpackPlugin.files.chunks.h0.entry.substr(htmlWebpackPlugin.files.publicPath.length)].source() %>
+	</script>
+	
 </head>
 <body>
 	<div><%= htmlWebpackPlugin.options.date %></div>
@@ -20,8 +25,14 @@
 	<% } %>
 
 	<!-- 自由配置 -->
-	<script src="<%= htmlWebpackPlugin.files.chunks.h0.entry %>">
-	</script>
+	<% for(var key in htmlWebpackPlugin.files.chunks) { %>
+		<!-- 排除公关部分-->
+		<% if(key !=="h0"){ %>
+			<script src="<%= htmlWebpackPlugin.files.chunks[key].entry %>">
+			</script>
+		<% }%>
+	<% } %>
+	
 	
 </body>
 </html>

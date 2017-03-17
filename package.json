@@ -13,6 +13,15 @@
         "webpack": "latest",
         "style-loader": "latest",
         "css-loader": "latest",
-        "html-webpack-plugin":"latest"
+        "html-webpack-plugin":"latest",
+        "babel-core":"latest",
+        "babel-loader":"latest",
+        "babel-preset-es2015":"latest",
+        "extract-text-webpack-plugin":"latest",
+        "html-loader":"latest",
+        "ejs-loader":"latest",
+        "file-loader":"latest",
+        "url-loader":"latest"
     }
+    
 }
